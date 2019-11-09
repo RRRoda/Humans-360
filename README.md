@@ -1,25 +1,25 @@
 # Humans-360
-
+```python
 def setup():
     size(520, 500)
     
 def draw():
     background(300, 100, 40)
     fill(0)
-    estrela(150, 250, 200, 100)
+    homem(150, 250, 200, 100)
     fill (255)
-    estrela(360, 250, 200, 100)
+    homem(360, 250, 200, 100)
     fill (255)
-    estrela(160, 250, 200, 0)
+    homem(160, 250, 200, 0)
     fill (0)
-    estrela(370, 250, 200, 0)
+    homem(370, 250, 200, 0)
     fill (20, 30, 100)
-    estrela(260, 150, 150, 0)
+    homem(260, 150, 150, 0)
 
     
     
-def estrela(x, y, largura, largurinha):
-    M, m = largura / 2, largurinha / 2
+def homem(x, y, LADO, LADOO):
+    L, l = LADO / 2, LADOO / 2
     pushMatrix() 
     translate(x, y)
     rotate(mouseX / 50.)
@@ -37,3 +37,4 @@ def estrela(x, y, largura, largurinha):
     vertex(-14, -70)
     endShape(CLOSE) 
     popMatrix() 
+```
